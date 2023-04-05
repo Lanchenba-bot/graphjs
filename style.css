@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+#container{
+	position: relative;
+	display:flex;
+	width: 600px;
+	height: 400px;
+	border: 1px solid black;
+}
+#yaxis{
+	display:flex;
+	flex-direction: column;
+	position: absolute;
+	width:1rem;
+	height: 100%;
+	border-left: 1px solid black;
+}
+#ynumbers{
+
+	position:absolute;
+	left: -15px;
+	top: -6px;
+	font-family: sans-serif;
+	font-size: 8px;
+	background: light-green;
+}
+.nums{
+/* 	background: salmon; */
+	height: 10px;
+	margin-bottom: 10px;
+}
+.y-small-lines{
+	width: 0.1rem;
+	height: 4px;
+	border-bottom: 1px solid red;
+}
+.y-medium-lines{
+	width: 0.3rem;
+	height: 4px;
+	border-bottom: 1px solid red;
+}
+.y-large-lines{
+	width: 0.5rem;
+	height: 4px;
+	border-bottom: 1px solid red;
+}
+#xaxis{
+	display:flex;
+	flex-direction: row;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
+	border-right: 4px solid black;
+	z-index: 500;
+
+}
+.x-medium-lines{
+	width: 30px;
+	height: 5px;
+/* 	background: red; */
+	border-right: 1px solid red;
+}
+.x-large-lines{
+	width: 30px;
+	height: 10px;
+/* 	background: red; */
+	border-right: 1px solid red;
+}
+#xelements{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.element{
+	position: absolute;
+	bottom: 0;
+	background: blueviolet;
+/* 	width: 5%; */
+}
